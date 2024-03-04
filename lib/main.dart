@@ -1,9 +1,7 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
-  home: const Home(),
+void main() => runApp(const MaterialApp(
+  home:  Home(),
 ));
 
 
@@ -19,27 +17,20 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.green[700],
       ),
       body:  Center(
-        child:  Text(
-          'Hot restart is working',
-          style: TextStyle(
-              fontSize: 30.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2.0,
-              backgroundColor: Colors.green[200],
-              height: 5.0,
-              fontFamily: 'IndieFlower'
-          ),
-        ),
+        child:  Image.asset('assets/two.jpg')
 
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+
           // Add your onPressed logic here
           print('FloatingActionButton pressed!');
         },
         tooltip: 'Increment Counter',
-        child:  Text('Click'),
         backgroundColor: Colors.green[300],
+         splashColor: Colors.red[600],
+        child:  const Text('Click'),
       ),
     );
   }
